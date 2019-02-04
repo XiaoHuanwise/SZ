@@ -1,0 +1,5 @@
+E:\C# project\SZ\SZ\SZ\bin\Release\SZ.exe
+E:\C# project\SZ\SZ\SZ\bin\Release\SZ.pdb
+E:\C# project\SZ\SZ\SZ\obj\Release\SZ.csprojResolveAssemblyReference.cache
+E:\C# project\SZ\SZ\SZ\obj\Release\SZ.exe
+E:\C# project\SZ\SZ\SZ\obj\Release\SZ.pdb

@@ -29,7 +29,7 @@ namespace SZHB
 			while (true)
 			{
 				r = sr;//更新初始数据
-				var ret = HttpPost("https://webapi.ccash.com/common/rate", "32");//从CCASH获取更新数据包
+				string ret = HttpPost("https://webapi.ccash.com/common/rate", "32");//从CCASH获取更新数据包
 				if (ret == "读取数据包失败")
 				{
 					//Console.WriteLine("读取数据包错误！！！");
@@ -38,7 +38,7 @@ namespace SZHB
 					continue;
 				}//检查是否出错(过快或超时)
 				//截取数据包的zh_CN部分-----------------
-				ret = ret.Remove(0, ret.Length - 445);
+				ret = ret.Remove(0, ret.Length - 671);
 				ret = ret.Remove(ret.Length - 4, 3);
 				//------------------------------------
 			
@@ -107,7 +107,7 @@ namespace SZHB
 		
 		//POST请求部分----------------------------------------------------------------------------
 		private static CookieContainer cookie = new CookieContainer();//新建一个cookie
-		private static string HttpPost(string url, string postDataStr)//http模拟请求函数(XRH)
+		private static string HttpPost(string url, string postDataStr)//http模拟请求函数(XHR)
 		{
 			try//尝试，如果出错就处理
 			{
@@ -148,7 +148,7 @@ namespace SZHB
 		private static string[] Division(string rate)
 		{
 			string[] rerate = new string[5], keyword = {"\"CC\":", "\"CA\":", "\"CWV\":", "\"XC\":", "\"USDT\":"};
-			
+			//Console.WriteLine(rate);//数据分割输出检查
 			for (int i = 0; i < 5; i++)
 			{
 				rerate[i] = rate.Substring(rate.IndexOf(keyword[i]) + keyword[i].Length, 18);
