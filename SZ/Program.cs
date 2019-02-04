@@ -99,7 +99,7 @@ namespace SZHB
 				//输出结果
 				Console.WriteLine("循环后的货币数量为：{0}", r);
 				Console.WriteLine("------------------------------");
-				//Delay(35);
+				Delay(10);
 				//Thread.Sleep(35000);
 			}
 			//goto HEAD1;
