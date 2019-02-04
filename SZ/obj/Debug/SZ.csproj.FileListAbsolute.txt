@@ -1,0 +1,5 @@
+E:\C# project\SZ\SZ\SZ\bin\Debug\SZ.exe
+E:\C# project\SZ\SZ\SZ\bin\Debug\SZ.pdb
+E:\C# project\SZ\SZ\SZ\obj\Debug\SZ.csprojResolveAssemblyReference.cache
+E:\C# project\SZ\SZ\SZ\obj\Debug\SZ.exe
+E:\C# project\SZ\SZ\SZ\obj\Debug\SZ.pdb
